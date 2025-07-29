@@ -14,8 +14,11 @@ document.getElementById("submitButton").addEventListener("click", async () => {
     const hashedValue = await hashWithSalt(value, salt);
 
     const output = document.getElementById("output");
-    output.textContent = `Your password: ${hashedValue}`;
+    output.textContent = hashedValue;
 
+    // Display the output title and copy button
+    const outputTitle = document.getElementById("OutputTitle");
+    outputTitle.style.display = "block";
     const copyButton = document.getElementById("copyButton");
     copyButton.style.display = "block";
 });

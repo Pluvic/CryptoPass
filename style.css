@@ -2,12 +2,16 @@ body {
     font-family: sans-serif;
     padding : 10px;
     width : 400px;
+    background-color: rgb(216, 246, 247);
 }
 
 input {
     width: 100%;
+    margin : 5px 0;
     padding: 5px;
+    box-sizing: border-box; /* Ensures padding is included in width */
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 button {
@@ -23,4 +27,11 @@ button {
     margin-top : 10px;
     font-weight: bold;
     word-break: break-word;
+}
+
+#OutputTitle {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
 }
